@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f6f6;
+    color: #333;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1.2rem;
+    min-height: 90vh;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+
+  .content {
+    padding: 1rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .order-details,
+  .signature-section {
+    margin-bottom: 1.2rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+
+  }
+
+  .order-details h2,
+  .signature-section h2 {
+    margin-bottom: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .order-details p {
+    margin-bottom: 0.6rem;
+    font-size: 1rem;
+    color: #555;
+  }
+
+  .signature-section canvas {
+    width: 100%;
+    max-width: 400px;
+    height: 120px;
+    border: 2px solid #0e5098;
+    border-radius: 8px;
+    margin-bottom: 0.6rem;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.625rem;
+    margin-top: 0.625rem;
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #0e5098;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #effacer {
+    background-color: #e4b423;
+  }
+
+  #effacer:hover {
+    background-color: #9b7a19;
+  }
+
+  #enregistrer {
+    background-color: #2abd4c;
+  }
+
+  #enregistrer:hover {
+    background-color: #309e49;
+  }
+
+  #message {
+    color: #e53e3e;
+    font-size: 0.875rem;
+  }
+
+  /* Styles pour les tablettes */
+  @media screen and (min-width: 600px) and (max-width: 1024px) {
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+
+    .order-details,
+    .signature-section {
+      margin-bottom: 0;
+    }
+
+    .buttons {
+      justify-content: flex-start;
+    }
+  }
+
+  /* Styles pour les PC */
+  @media screen and (min-width: 1025px) {
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .order-details p,
+    .signature-section p {
+      font-size: 1rem;
+    }
+  }
